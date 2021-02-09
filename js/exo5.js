@@ -10,9 +10,9 @@ function errorGPS(err) {
 
 function handleOrientation(e) {
     let absolute = e.absolute;
-    let alpha    = e.alpha;
-    let beta     = e.beta;
-    let gamma    = e.gamma;
+    let alpha = e.alpha;
+    let beta = e.beta;
+    let gamma = e.gamma;
     document.getElementById("orientationAbsolute").innerHTML = "Orientation : " + absolute + " °.";
     document.getElementById("orientationAlpha").innerHTML = "Orientation : " + alpha + " °.";
     document.getElementById("orientationBeta").innerHTML = "Orientation : " + beta + " °.";
