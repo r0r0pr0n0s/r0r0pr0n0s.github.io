@@ -13,10 +13,10 @@ function handleOrientation(e) {
     let alpha    = e.alpha;
     let beta     = e.beta;
     let gamma    = e.gamma;
-    document.getElementById("orientationAbsolute").innerHTML = "Orientation : " + alpha + " °.";
+    document.getElementById("orientationAbsolute").innerHTML = "Orientation : " + absolute + " °.";
     document.getElementById("orientationAlpha").innerHTML = "Orientation : " + alpha + " °.";
-    document.getElementById("orientationBeta").innerHTML = "Orientation : " + alpha + " °.";
-    document.getElementById("orientationGamma").innerHTML = "Orientation : " + alpha + " °.";
+    document.getElementById("orientationBeta").innerHTML = "Orientation : " + beta + " °.";
+    document.getElementById("orientationGamma").innerHTML = "Orientation : " + gamma + " °.";
 }
 
 window.addEventListener("deviceorientation", handleOrientation, true);
