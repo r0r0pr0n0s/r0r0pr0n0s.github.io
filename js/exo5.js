@@ -7,3 +7,10 @@ function succesGPS(pos) {
 function errorGPS(err) {
     document.getElementById("test").innerHTML = "erreur";
 }
+
+function handleOrientation(e) {
+    var alpha = e.alpha;
+    document.getElementById("orientation").innerHTML = "Orientation : " + alpha + " °."
+}
+
+window.addEventListener("deviceorientation", handleOrientation, true);
