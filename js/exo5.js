@@ -9,8 +9,14 @@ function errorGPS(err) {
 }
 
 function handleOrientation(e) {
-    var alpha = e.alpha;
-    document.getElementById("orientation").innerHTML = "Orientation : " + alpha + " °."
+    let absolute = e.absolute;
+    let alpha    = e.alpha;
+    let beta     = e.beta;
+    let gamma    = e.gamma;
+    document.getElementById("orientationAbsolute").innerHTML = "Orientation : " + alpha + " °.";
+    document.getElementById("orientationAlpha").innerHTML = "Orientation : " + alpha + " °.";
+    document.getElementById("orientationBeta").innerHTML = "Orientation : " + alpha + " °.";
+    document.getElementById("orientationGamma").innerHTML = "Orientation : " + alpha + " °.";
 }
 
 window.addEventListener("deviceorientation", handleOrientation, true);
